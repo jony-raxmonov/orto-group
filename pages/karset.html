@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starfit</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/starfit-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <link rel="stylesheet" href="../css/podushka.css">
+    <link rel="stylesheet" href="../css/style.css">
+   
+</head>
+<body>
+    
+    <div id="page-preloader" class="preloader">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <button class="open-button wow animate__animated animate__headShake animate__infinite " id="open-btn" data-wow-delay="1s" onclick="openForm()"><img src="../img/Group 59.png" alt=""></button>
+
+
+
+    <section class="hero">
+        <div class="wrapper">
+            <header class="header">
+                <div class="container__header">
+                    <div class="header__body">
+                        <div >
+                            <a href="../index.html"><img src="../img/logo yellow.png" class="logo" alt=""></a>
+                        </div>
+                        <div class="lang__box response d-flex">
+                            <p class="header-item-lang-ru "><button id="ru" class="translate btn-border"><img src="../img/emojione_flag-for-russia.png" alt=""></button></p>
+                            <p class="header-item-lang-uz"><button id="uz" class="translate"> <img src="../img/flag-uzb.png" alt=""></button></p>
+                      
+                        </div>
+                        <button onclick="open_modal(0)" class="open-btn"><i class="uil uil-apps apps" > </i></button>
+                        <div id="modal" onclick="modal_out()">
+                            <div class="modal_window">
+                                <div class="close" onclick="close_modal()">
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                                <div class="navigation__bar2">
+                                    <div class="bar__title d-flex">
+                                        <div>
+                                            <img src="../img/podushka/Vector.png" alt="">
+                                        </div>
+                                        <a href="../pages/podushka.html" class="lng-p-pillow lang" key="yostig">Ortopedik
+                                            yostig</a>
+                                    </div>
+                                    <div class="bar__title d-flex">
+                                        <div>
+                                            <img src="../img/podushka/Group 48.png" alt="">
+                                        </div>
+                                        <a href="../pages/vorotnik.html" class="lang" key="vorotnik2">Bo'yin uchun massajli
+                                            vorotnik</a>
+                                    </div>
+                                    <div class="bar__title d-flex">
+                                        <div>
+                                            <img src="../img/podushka/Group 47.png" alt="">
+                                        </div>
+                                        <a href="../pages/karset.html" class="lang" key="korset2">Belingiz uchun korset </a>
+                                    </div>
+                                    <div class="bar__title d-flex">
+                                        <div>
+                                            <img src="../img/podushka/Group 46.png" alt="">
+                                        </div>
+                                        <a href="../pages/bandaj.html" class="lang" key="bandaj2">Echib olinadigan tizza
+                                            bandaji</a>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <nav class="header__menu">
+                            <ul class="header__list">
+                                <li>
+                                    <a href="../index.html" class="header__link lang" key="home">bosh sahifa</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__link lang" key="kateg">bizni mahsulotlar</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__link lang" key="reviews">sharhlar</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header__link lang" key="contact">biz bilan bog'laning</a>
+                                </li>
+    
+                            </ul>
+                            <h1><a href="../index.html" class="header__logo2">logo<span style="color: #FFCE00;">.</span></a>
+                            </h1>
+                            <div class="nav__phone2 ">
+                              
+                             
+                                <div class="d-flex gap-2">
+                                        <p> <i class="uil uil-telegram"></i><a href="https://t.me/starfitmagazin"
+                                                style="color:black;text-decoration: none;"
+                                                class="nav__phone__link nav__phone2-link "><b>@starfitmagazin</b></a></p>
+                                </div>
+                                    <div class="d-flex gap-2 top">
+                                        <div><i class="uil uil-envelope bottom " style="position: relative;top:-1px"></i> </div>
+                                        <p><a href="mailto:starfit.shop77@gmail.com" style="color: black;" class="nav__phone2-link"><b
+                                                    style="position: relative;top:5px;left: -7px;">@starfit.shop77@gmail.com</b></a></p>
+                                    </div>
+                                    <div class="d-flex gap-2 links-top"  >
+                                        <div class="btn-2 none  lang"  key="btn-1">
+                                            <a href="#contact">Buyurtma berish</a>
+                                         </div>
+                                         
+                                        
+                                    </div>
+                            </div>
+                        </nav>
+                        <div class="lang__box d-flex">
+                            <p class="header-item-lang-ru"><button id="ru" class="translate"><img src="../img/emojione_flag-for-russia.png" alt=""></button></p>
+                            <p class="header-item-lang-uz"><button id="uz" class="translate"> <img src="../img/flag-uzb.png" alt=""></button></p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+    
+        </div>
+    
+      
+        <div class="container">
+            <div class="row">
+                <div class="hero__box d-flex ">
+                    <div class="navigation__bar">
+                        <div class="bar__title d-flex">
+                            <div>
+                                <img src="../img/podushka/Vector.png" alt="">
+                            </div>
+                            <a href="../pages/podushka.html" class="lng-p-pillow lang" key="yostig">Ortopedik yostig</a>
+                        </div>
+                        <div class="bar__title d-flex">
+                            <div>
+                                <img src="../img/podushka/Group 48.png" alt="">
+                            </div>
+                            <a href="../pages/vorotnik.html" class="lang" key="vorotnik2">Bo'yin uchun massajli
+                                vorotnik</a>
+                        </div>
+                        <div class="bar__title d-flex">
+                            <div>
+                                <img src="../img/podushka/Group 47.png" alt="">
+                            </div>
+                            <a href="../pages/karset.html" class="lang" key="korset2">Belingiz uchun korset </a>
+                        </div>
+                        <div class="bar__title d-flex">
+                            <div>
+                                <img src="../img/podushka/Group 46.png" alt="">
+                            </div>
+                            <a href="../pages/bandaj.html" class="lang" key="bandaj2">Yechib olinadigan tizza
+                                bandaji</a>
+                        </div>
+                    </div>
+
+
+                    <main class="main__box">
+
+
+                        <section>
+                            <div class="intro-product">
+                                <div class="slider-product">
+
+                                    <div class="card-slider-product">
+                                        <div class="card-slider__nav slider-nav">
+                                            <div class="slider-nav__item" tabindex="0"><img
+                                                    src="./../img/remove-bg img/img-1.png" alt=""></div>
+                                            <div class="slider-nav__item" tabindex="0"><img
+                                                    src="./../img/photo_2022-10-26_23-37-50 (2).png" alt=""></div>
+                                            <div class="slider-nav__item" tabindex="0"><img
+                                                    src="./../img/photo_2022-10-26_23-37-51.png" alt=""></div>
+                                            <div class="slider-nav__item" tabindex="0"><img src="./../img/IMG_3517.png"
+                                                    alt=""></div>
+                                            <div class="slider-nav__item" tabindex="0"><img src="./../img/IMG_3518.png"
+                                                    alt=""></div>
+                                        </div>
+                                        <div class="card-slider__block slider-block">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="../img/remove-bg img/img-1.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="../img/karset/photo_2022-10-26_23-37-50 (2).png" alt="">
+
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="../img/karset/photo_2022-10-26_23-37-51.png" alt="">
+
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="../img/karset/IMG_3517.png" alt="">
+
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="../img/karset/IMG_3518.png" alt="">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price none">
+                                            <span class="price__current lang" key="sum1">240 000 sum</span>
+                                            <span class="price__old lang" key="sum6">260 000 sum</span>
+                                        </div>
+                                        <a href="tel:+998904546363"> <button class="buy none width lang" key="buy">Sotib olish</button></a>
+                                    </div>
+                                    <div class="card-info mb-5">
+                                        <h2 class="title lang" key="intro-pillow2">Ortopedik</h2>
+                                        <span style="font-size: 2rem;font-weight:600;background-color:#FFCE00"
+                                            class="lang" key="intro-korset">korset</span>
+                                        <div class="testimonials">
+                                            <div class="rating">
+                                                <i class="uis uis-star"></i>
+                                                <i class="uis uis-star"></i>
+                                                <i class="uis uis-star"></i>
+                                                <i class="uis uis-star"></i>
+                                                <i class="uis uis-star"></i>
+
+                                            </div>
+                                            <a href="#" class="testimonials__link">Отзывы 83</a>
+                                        </div>
+                                        <span class="available">В началии: 13 шт</span>
+                                        <div class="price">
+                                            <span class="price__current lang" key="sum1">240 000 sum</span>
+                                            <span class="price__old lang" key="sum6">260 000 sum</span>
+                                        </div>
+                                        <a href="tel:+998904546363"><button class="buy lang" key="buy">Sotib olish</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+
+                        <section>
+                            <div class="about">
+                                <div class="about__text">
+                                    <h5 class="lang" key="interesting">Qiziqarli faktlar</h5>
+
+                                    <h2 class="about-h2">
+                                        <span style="color: #000;font-weight: 700;" class="lang" key="product">MAHSULOT
+                                        </span>
+                                        <span class="lang" key="about"
+                                            style="color: #FFCE00; font-weight: 700;font-size: 34px;line-height: 54px">HAQIDA</span>
+                                    </h2>
+                                    <img src="../img/podushka/Group 18.png" alt="">
+                                    <p>
+                                        <b class="lang" key="korset">Ortopedik korset</b> <span class="lang"
+                                            key="about-korset">- umurtqa pog'onasi kasalliklari, egriligi va
+                                            shikastlanishlarida qo'llaniladigan maxsus qattiqlashtiruvchi va tortuvchi
+                                            tasmalar bilan nafas oladigan, elastik matodan tayyorlangan tibbiy ortopedik
+                                            kamar. Millionlab odamlar bel og'rig'idan azob chekishadi. Ko'pincha og'riq
+                                            sindromi pastki orqa qismga davriy noto'g'ri og'irlik o'tkazish natijasida
+                                            yuzaga keladi. Shunday qilib, orqa tayanch bu yukni engillashtirishga yordam
+                                            beradi va shu bilan umurtqa pog'onasi, intervertebral disklar va pastki orqa
+                                            mushaklarning bo'g'imlariga ta'sir qiladigan bosimni kamaytiradi. Yukni
+                                            tushirish mushaklarning og'riqli kuchlanishini yo'q qiladi va shu bilan
+                                            umurtqa pog'onasining sog'lom holatini ta'minlaydi. Orqa tirgaklar umurtqa
+                                            pog'onasining qo'shimcha barqarorligini ta'minlaydi, har qanday faoliyat
+                                            paytida og'riq va noqulaylikni qoplaydi, shuningdek, turli xil jarohatlar va
+                                            sharoitlarni davolash va tiklashga yordam beradi.
+                                        </span>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </section>
+
+
+
+                        <section>
+                            <div class="mainly__title">
+                                <div>
+                                    <div class="d-flex justify-items-center">
+
+                                        <h2 class="mainly__text lang" key="main1">ASOSIY</h2> &nbsp;&nbsp;
+                                        <h2 style="background-color: #FFCE00; font-weight: 900;margin-top: 10px; height:40px; padding-top: 6px;"
+                                            class="lang mainly-h2" key="main2">XUSUSIYATLAR</h2>
+                                    </div>
+                                    <img src="./../img/podushka/Group 18.png" alt="">
+                                </div>
+                                <div class="mainly">
+                                    <div class=" d-flex gap-4">
+                                        <div class="mt-2">
+                                            <img src="./../img/podushka/Group 6.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5><b class="lang" key="material">Material</b></h5>
+                                            <p class="lang" key="main-p">Sog'ligingiz uchun yuqori
+                                                sifatli<br>tuzatuvchimizni xarid qiling</p>
+                                        </div>
+                                    </div>
+
+                                    <div class=" d-flex gap-4 ">
+                                        <div class="mt-2">
+                                            <img src="./../img/podushka/Group 7.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5><b class="lang" key="repeir">Davolash va oldini olish</b></h5>
+                                            <p class="lang" key="main-p">Sog'ligingiz uchun yuqori
+                                                sifatli<br>tuzatuvchimizni xarid qiling</p>
+                                        </div>
+                                    </div>
+
+                                    <div class=" d-flex gap-4 ">
+                                        <div class="mt-2">
+                                            <img src="./../img/podushka/Group 8.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5><b class="lang" key="ekologiya">Ekologiya va ergonomika</b></h5>
+                                            <p class="lang" key="main-p">Sog'ligingiz uchun yuqori
+                                                sifatli<br>tuzatuvchimizni xarid qiling</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="about__img d-flex ">
+                                <img src="./../img/podushka/photo_2022-10-26_23-20-34.png" class="img-fluid" alt="">
+                                <img src="./../img/podushka/photo_2022-10-26_23-20-34 (2).png" alt="">
+                                <img src="./../img/podushka/photo_2022-10-26_23-20-35 (2).png" alt="">
+                                <img src="./../img/podushka/photo_2022-10-26_23-20-33.png" alt="">
+                                <img src="./../img/podushka/photo_2022-10-26_23-20-34 (3).png" alt="">
+                                <img src="./../img/podushka/photo_2022-10-26_23-20-35.png" alt="">
+                                <img src="./../img/podushka/photo_2022-10-26_23-20-36.png" alt="">
+                            </div>
+                        </section>
+
+
+
+                        <section>
+                            <div class="testimony__title">
+                                <div>
+                                    <div class="d-flex testimon_block">
+                                        <h2 class="testimony__text lang" key="use" style="font-weight: 700;">FOYDALANISH
+                                            UCHUN </h2> &nbsp;&nbsp;
+                                        <div>
+                                            <span style="background-color: #FFCE00;font-weight: 700;margin-top: -5px;"
+                                                class="lang mainly-h2 to-top" key="show"> KO‘RSATMALAR</span>
+
+                                        </div>
+                                    </div>
+                                    <img src="./../img/Group 18.png" alt="">
+                                </div>
+                                <div class="testimony">
+                                    <div class=" d-flex gap-4">
+                                        <div >
+                                           <i class="uil uil-check-circle"></i>
+                                        </div>
+                                        <div >
+                                            <p class="lang" key="karset-p1">Kuchli egilish, zaiflashgan dorsal mushaklar.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class=" d-flex gap-4 ">
+                                        <div >
+                                           <i class="uil uil-check-circle"></i>
+                                        </div>
+                                        <div>
+                                            <p class="lang" key="karset-p2">Orqa miya mintaqasining o'tkir yoki surunkali kasalliklari.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class=" d-flex gap-4 ">
+                                        <div >
+                                           <i class="uil uil-check-circle"></i>
+                                        </div>
+                                        <div>
+                                            <p class="lang" key="karset-p3">Orqa miyaning konjenital yoki surunkali kasalliklari.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class=" d-flex gap-4 ">
+                                        <div >
+                                           <i class="uil uil-check-circle"></i>
+                                        </div>
+                                        <div>
+                                            <p class="lang" key="karset-p4">Mushak-skelet tizimining lezyonlarini oldini olish.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class=" d-flex gap-4 ">
+                                        <div >
+                                           <i class="uil uil-check-circle"></i>
+                                        </div>
+                                        <div>
+                                            <p class="lang" key="karset-p5">Orqa miyaning turli kasalliklarida normal holatni saqlash.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+
+
+
+
+                        <section id="contact">
+                            <div class="contact__box mt-5 mb-5">
+                                <div class="d-flex testimon_block contact-block mr-5">
+                                    <h1 class="lang" key="contact-title">Nima buyurtma</h1>
+                                    <h1 style="color: #FFCE00;" class="lang" key="contact-text">bermoqchisiz?</h1>
+
+                                </div>
+                                <div class="contact__form">
+                                    <input type="text" placeholder="isim-familiya*" class="mt-2" id="name"> <br>
+                                    <input type="tel" name="phone" class="mt-4 mb-4" placeholder="telefon nomer*"
+                                        id="phone"> <br>
+                                    <input type="text" placeholder="manzil*" class="mt-1 mb-3" id="address"> <br>
+                                    <textarea name="comment" id="comment" cols="30" rows="10"
+                                        placeholder="qaysi mahsulotimizni olmoqchisiz?"></textarea> <br>
+                                    <button type="submit" class="contact__btn lang " key="send" onclick="send()">YUBORISH</button>
+                                </div>
+                            </div>
+                        </section>
+
+
+                    </main>
+                </div>
+          
+                <div id="sells">
+                    <div class="main__heading">
+                        <h2>БЕСТ<span>СЕЛЛЕРЫ</span></h2>
+                        <img src="../img/Group 18.png" alt="">
+                    </div>
+                    <div class="sells__box d-flex pt-2 mb-5">
+                        <div class="sells__card pillow__card">
+                            <div class="img__box">
+                                <div> <img src="../img/product-karset.png" style="margin-left: 20px;" alt=""></div>
+                            </div>
+                            <div class="stars d-flex mt-2 mb-2">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                            </div>
+                            <div class="views d-flex">
+                                <div class="line"></div>
+                                <p class="viewers mt-2">301 reviews</p>
+                            </div>
+                            <p class="lang" key="korset">Ortopedik korset</p>
+                            <h3 class="lang" key="sum1">240.000 sum</h3>
+                                     <button class="lang" key="buy"><a href="../pages/karset.html"> sotib olish</a></button>
+                        </div>
+                        <div class="sells__card pillow__card card-sell2 ">
+                            <div class="img__box">
+                                <div> <img src="../img/intro-img2.png" class="sells__img" style="margin-left: 30px;" alt="">
+                                </div>
+                            </div>
+                            <div class="stars d-flex mt-2 mb-2">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                            </div>
+                            <div class="views d-flex">
+                                <div class="line"></div>
+                                <p class="viewers mt-2">279 reviews</p>
+                            </div>
+                            <p class="lang" key="yostig">Ortopedik yostig'</p>
+                            <h3 class="lang" key="sum3">420.000 sum</h3>
+                                     <button class="lang" key="buy"><a href="../pages/podushka.html"> sotib olish</a></button>
+                 
+                        </div>
+                        <div class="sells__card pillow__card card-sell3">
+                            <div class="img__box">
+                                <div> <img src="../img/photo_2022-10-26_23-40-06.png" style="margin-left:30px;" alt="">
+                                </div>
+                            </div>
+                            <div class="stars d-flex mt-2 mb-2">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                            </div>
+                            <div class="views d-flex">
+                                <div class="line"></div>
+                                <p class="viewers mt-2">260 reviews</p>
+                            </div>
+                            <p class="lang" key="vorotnik">Massajli vorotnik</p>
+                            <h3 class="lang" key="sum2">150.000 sum</h3>
+                                     <button class="lang" key="buy"><a href="../pages/vorotnik.html"> sotib olish</a></button>
+                 
+                        </div>
+                        <div class="sells__card pillow__card">
+                            <div class="img__box">
+                                <div> <img src="../img/intro-img4.png" class="sells__img4" alt=""></div>
+                            </div>
+                            <div class="stars d-flex mt-2 mb-2">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                                <img src="../img/Star 1.svg" alt="">
+                            </div>
+                            <div class="views d-flex">
+                                <div class="line"></div>
+                                <p class="viewers mt-2">299 reviews</p>
+                            </div>
+                            <p class="lang" key="bandaj">Tizza uchun bandaj</p>
+                            <h3 class="lang" key="sum4">320.000 sum</h3>
+                                     <button class="lang" key="buy"><a href="../pages/bandaj.html"> sotib olish</a></button>
+                 
+                        </div>
+    
+                    </div>
+    
+    
+
+
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__block d-flex justify-content-around  pt-4 pb-3 gap-5">
+                    <div>
+                        <img width="150px" style=" margin-bottom: 0;" src="../img/logo yellow.png" alt="">
+                        <div style="margin-top:10px">
+                            <p>Copyright © 2022 ortogroup.uz</p>
+                            <p style="margin-top: -10px;">
+                                All rights reserved.</p>
+                       
+                        </div>
+                    </div>
+                    <div class="adress ">
+                        <h3 class="lang mb-3" key="info">Info</h3>
+                        <div class="d-flex item gap-2">
+                            <div>
+                                <img src="../img/ep_map-location.png" alt="">
+                            </div>
+                            <p  class="mt-1">Самарканд, ул. Абу Райхон Беруний, 86 </p>
+                        </div>
+                        <div class="d-flex item gap-2" style="margin-top: -7px;margin-bottom: 7px;">
+                            <div>
+                                <img src="../img/fluent_mail-20-filled.png" alt="">
+                            </div>
+                            <a href="#">info@ortogroup.com</a>
+                        </div>
+                       
+                        <div class="d-flex item mt-1 gap-2">
+                            <div>
+                                <img src="../img/carbon_phone-filled.png" alt="">
+                            </div>
+                           <a href="tel:+998904546363"> +998904546363</a>
+                           <a href="tel:+998973970303">+998973970303</a>
+                        </div>
+                       
+                        
+                    </div>
+                    <div class="menu">
+                        <h3 class="lang mb-3" key="menu">Menu</h3>
+                        <p class="lang mt-2" key="all" ><a href="#catteg">hamma productlar</a></p>
+                        <p class="lang" key="reviews"><a href="#testimonial">sharhlar</a></p>
+                        <p class="lang" key="contact"><a href="#contact">biz bilan bog'lanish</a></p>
+                    </div>
+                    <div>
+                        <h3 class="mb-3">Ijtimoiy tarmoqlar</h3>
+                        <div class="d-flex item mt-1 to-bottom gap-2">
+                            <p> <i class="uil uil-telegram" style="font-size: 25px;" ></i><a href="https://t.me/ortogroup1"
+                                    style="color:black;text-decoration: none;"
+                                    class="nav__phone__link ">&nbsp; @ortogroup</a></p>
+                        </div>
+                        <div class="d-flex item footer-item gap-2">
+                            <div>
+                                <i class="uil uil-instagram-alt"  style="font-size: 29px;"></i>
+                            </div>
+                            <a href="#" class="mt-2">@orto.group</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <p class="footer__title lang" key="rights">
+        Xamma huquqlar himoyalangan &copy; 2022
+    </p>
+
+
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/language.js"></script>
+ 
+    <script src="../js/podushka.js"></script>
+    <script src="../js/connector.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
